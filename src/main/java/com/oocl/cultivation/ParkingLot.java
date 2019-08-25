@@ -15,7 +15,17 @@ public class ParkingLot {
         this.capacity = capacity;
     }
 
-    public int getAvailableParkingPosition() {
-        return cars.size() - capacity;
-    }
+   /* public int getAvailableParkingPosition() {
+        return getCars().size() - capacity;
+    }*/
+
+	public Map<ParkingTicket, Car> getCars(ParkingTicket ticket ) {
+		return cars;
+	}
+
+	public void setCars(Map<ParkingTicket, Car> cars) {
+		this.cars = cars;
+	}
+
+	
 }
